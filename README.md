@@ -10,6 +10,12 @@ AzPhoto
 API키는 https://console.developers.google.com 에서 등록할 수 있으며, API키 신청/확인 방법은 구글 검색을 통해 확인하시기 바랍니다.
 
 
+시스템 요구사항
+=======
+
+PHP 5.x 이상 / MySQL 5.x 이상
+
+
 미리보기
 =======
 
