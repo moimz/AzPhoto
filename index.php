@@ -35,7 +35,7 @@ if (isset($lastPhoto['filename']) == false) {
 <body>
 	<div id="Header">
 		<div class="map">
-			<img src="../images/logo.png">
+			<img src="./images/logo.png">
 		</div>
 		
 		<div class="calendar">
@@ -43,7 +43,7 @@ if (isset($lastPhoto['filename']) == false) {
 			<col width="100"><col width="100%"><col width="100">
 			<tr>
 				<td class="month"></td>
-				<td class="center"><img src="../images/logo.png"></td>
+				<td class="center"><img src="./images/logo.png"></td>
 				<td class="arrow">
 					<div>
 						<span onclick="showCalendar('prev');"></span>
