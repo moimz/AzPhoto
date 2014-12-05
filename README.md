@@ -1,7 +1,25 @@
 AzPhoto
 =======
 
-AzPhoto - Photo Viewer (Map, Calendar)
+사진 메타정보의 GPS와 사진촬영일자 정보를 기반으로 사진을 찍은 위치를 지도상에 모아서 보여주거나, 사진을 찍은날짜별로 캘린더를 이용하여 볼 수 있도록 하는 프로그램입니다.
+
+별도의 정보기록없이 오직 사진파일 업로드만으로 이 모든것이 자동으로 정리되어 보관/공유할 수 있습니다.
+
+정상적인 이용을 위하여 Google Maps API V3 API키가 필요합니다.
+
+API키는 https://console.developers.google.com 에서 등록할 수 있으며, API키 신청/확인 방법은 구글 검색을 통해 확인하시기 바랍니다.
+
+
+미리보기
+=======
+
+http://program.arzz.com/AzPhoto
+
+
+서비스지원
+=======
+
+http://www.arzz.com/community/beta.arzz
 
 
 설치방법
@@ -9,6 +27,7 @@ AzPhoto - Photo Viewer (Map, Calendar)
 
 1. 에이지포토는 현재 베타버전으로 별도의 설치프로그램을 제공하고 있지 않으며, 수동으로 설치를 해주어야 합니다.
 2. 다운로드 받은 모든파일을 서버에 업로드합니다.
+3. 업로드된 폴더에 userfiles 폴더를 생성한뒤 퍼미션을 707또는 777로 설정합니다. (예를들어 업로드경로를 /home/azphoto/ 로 하였을 경우 /home/azphoto/userfiles 폴더를 생성)
 3. 서버에 업로드 후 /configs/default.conf.php 파일안의 정보를 사용자에 맞게 수정하여 줍니다.
 4. 폴더에 포함되어 있는 schema.sql 파일을 참고하여 데이터베이스를 생성하여 줍니다.
 5. 생성 후 /index.php 파일을 웹브라우져에서 불러오면 사용할 수 있습니다.
