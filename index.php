@@ -450,7 +450,7 @@ if (isset($lastPhoto['filename']) == false) {
 		$.ajax({
 			type:"POST",
 			url:"./exec/GetPins.php",
-			data:{longitude:{start:bounds.wa.j,end:bounds.wa.k},latitude:{start:bounds.Fa.j,end:bounds.Fa.k},area:{width:$("#Map").width(),height:$("#Map").height()}},
+			data:{longitude:{start:bounds.getSouthWest().lng(),end:bounds.getNorthEast().lng()},latitude:{start:bounds.getNorthEast().lat(),end:bounds.getSouthWest().lat()},area:{width:$("#Map").width(),height:$("#Map").height()}},
 			dataType:"json",
 			success:function(result) {
 				while (gPins.length > 0) {
