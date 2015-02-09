@@ -521,7 +521,7 @@ if (isset($lastPhoto['filename']) == false) {
 				for (var i=0, loop=result.photos.length;i<loop;i++) {
 					var day = $("#Calendar td[date='"+result.photos[i].date+"']");
 					var area = day.find(".photo");
-					var image = $("<img>").attr("src","/userfiles/calendar/"+result.photos[i].filename+".jpg");
+					var image = $("<img>").attr("src","./userfiles/calendar/"+result.photos[i].filename+".jpg");
 					
 					if (area.width() * result.photos[i].height < area.height() * result.photos[i].width) {
 						var height = area.height();
@@ -562,7 +562,7 @@ if (isset($lastPhoto['filename']) == false) {
 				var photos = area.parents("td").data("photos");
 				if (photos.length > 0) {
 					for (var j=0, loopj=photos.length;j<loopj;j++) {
-						var image = $(area.find("img[src='/userfiles/calendar/"+photos[j].filename+".jpg']").get(0));
+						var image = $(area.find("img[src='./userfiles/calendar/"+photos[j].filename+".jpg']").get(0));
 						
 						if (area.width() * photos[j].height < area.height() * photos[j].width) {
 							var height = area.height();
